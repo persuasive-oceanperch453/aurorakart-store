@@ -1,4 +1,4 @@
-# ◈ Aurora Store — Full Stack Digital Product Store Template
+# ◈ Aurorakart Store — Full Stack Digital Product Store Template
 
 A fully-featured ecommerce template for selling digital products, built with **React + Vite** (frontend) and **Node.js + Express + MongoDB** (backend).
 
